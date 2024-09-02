@@ -1,0 +1,648 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,300italic,400italic,500,500italic,700,700italic,900,900italic,100italic);
+
+:root {
+    --wisteria-light:	#C5B4F8;
+    --wisteria-dark:	#9A7CF3;
+    --sky-light:		#80DFEF;
+    --sky-dark:			#49D1E9;
+    --surf-light: 		#A5F2E3;
+    --surf-dark: 		#6FEBD3;
+    --ginkgo-light: 	#B9E48B;
+    --ginkgo-dark: 		#9BD85A;
+    --yuzu-light: 		#F9E18B;
+    --yuzu-dark: 		#F6D251;
+    --mikan-light: 		#FDAC72;
+    --mikan-dark: 		#FC8936;
+    --hydrangea-light: 	#FF6D8F;
+    --hydrangea-dark: 	#FF2D5E;
+    --azalea-light: 	#FF93FA;
+    --azalea-dark: 		#FF5DE1;
+    --pebble: 			#F5F5EF;
+    --mackerel: 		#908E8F;
+    --basalt: 			#2A262C;
+    --slate: 			#111114;
+    --anko-light: 		#4A3F32;
+    --anko-dark: 		#251F18;
+    --karinto-light:	#876D58;
+    --karinto-dark: 	#564638;
+    --dango-light: 		#F4EED6;
+    --dango-dark: 		#E6D79E;
+    --sakura-light: 	#F7B8BA;
+    --sakura-dark: 		#F17E82;
+    --marblesoda-light:	#59C2E6;
+    --marblesoda-dark:	#20A8D5;
+    --matcha-light:		#79D993;
+    --matcha-dark:		#40C965;
+
+	--title-text:		var(--slate);
+	--subtitle-text:	var(--basalt);
+	--text-major:		var(--basalt);
+	--text-minor:		var(--mackerel);
+	--background:		var(--pebble);
+	--footerbg:			var(--mackerel);
+	--button-main:		var(--ginkgo-light);
+	--button-sub:		var(--surf-light);
+	--button-text:		var(--basalt);
+	--linebreak:		var(--mackerel);
+	--card-border:		white;
+	--card-bg:			white;
+	--card-text-major:	var(--basalt);
+	--card-text-minor:	var(--mackerel);
+	--drop-shadow:		var(--mackerel);
+	--toggle-bg:		var(--mackerel);
+	--toggle-button:	var(--pebble);
+	--highlighter:		var(--yuzu-light);
+	--highlighter-text: var(--basalt);
+	--tag1:				var(--yuzu-light);
+	--tag2:				var(--sakura-light);
+	--tag3:				var(--yuzu-light);
+	--tag-text:			var(--basalt);
+	--icon-sun:			var(--yuzu-light);
+	--icon-moon:		var(--slate);
+	--color-missing:	var(--azalea-dark);
+
+	overflow-x: hidden;
+}
+
+:root.dark {
+	--title-text:		var(--pebble);
+	--subtitle-text:	var(--pebble);
+    --text-major:		var(--mackerel);
+    --text-minor:		var(--mackerel);
+    --background:		var(--slate);
+    --footerbg:			var(--basalt);
+    --button-main:		var(--ginkgo-light);
+    --button-sub:		var(--surf-light);
+    --button-text:		var(--basalt);
+    --linebreak:		var(--mackerel);
+    --card-border:		white;
+    --card-bg:			white;
+    --card-text-major:	var(--basalt);
+    --card-text-minor:	var(--mackerel);
+    --drop-shadow:		var(--basalt);	    
+    --toggle-bg:		var(--basalt);
+    --toggle-button:	var(--mackerel);
+    --highlighter:		var(--wisteria-light);
+    --highlighter-text: var(--basalt);
+    --tag1:				var(--yuzu-light);
+    --tag2:				var(--sakura-light);
+    --tag3:				var(--yuzu-light);
+    --tag-text:			var(--basalt);
+    --icon-sun:			var(--yuzu-light);
+    --icon-moon:		var(--slate);
+    --color-missing:	var(--azalea-dark);
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-family: 'Roboto', sans-serif;
+	background-color: var(--background);
+}
+ol {
+	list-style: none;
+}
+p {
+	width: 860px;
+	height: auto;
+	margin: 0 auto;
+	font-size: 1.25em;
+	color: var(--text-major);
+	text-align: left;
+}
+li {
+	width: 860px;
+	height: auto;
+	margin: 0 auto;
+	font-size: 1.25em;
+	color: var(--text-major);
+	text-align: left;
+	list-style-type: disc;
+  	list-style-position: inside;
+  	text-indent: -1.4em;
+  	padding-left: 2.5em;
+  	padding-bottom: 0.6em;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a:link {
+  	color: var(--title-text);
+}
+a:visited {
+  	color: var(--title-text);
+}
+a:hover {
+  	color: var(--title-text);
+}
+a:active {
+  	color: var(--title-text);
+}
+a:link, a:visited {
+  	text-decoration: none;
+}
+	
+section.container1 {
+	width: 1060px;
+	height: auto;
+	margin: 0 auto;
+	place-content: center;
+}
+
+section.container2 {
+	width: 530px;
+	height: auto;
+	margin: 0 auto;
+	place-content: center;
+}
+
+section.container3 {
+	width: 796px;
+	height: auto;
+	margin: 0 auto;
+	place-content: center;
+}
+
+header.main {
+	margin: 25px 0;
+	padding-bottom: 0px;
+	text-align: center;
+	padding-left: 1.9em;
+}
+
+header.main h1 {
+	font-weight: 400;
+	font-size: 4em;
+	color: var(--title-text);
+	text-align: center;
+	text-transform: uppercase;
+	display: inline
+}
+
+header.main h2 {
+	font-weight: 400;
+	font-size: 2.25em;
+	color: var(--text-minor);
+	text-transform: uppercase;
+	display: inline;
+	vertical-align: 0.4em;
+	padding-left: 0.2em;
+}
+
+header.main h3 {
+	font-weight: 550;
+	font-size: 1.05em;
+	color: var(--text-minor);
+	text-transform: uppercase;
+	padding-left: 17.3em;
+	position: relative;
+	top: 7px;
+}
+
+header.main h4 {
+	font-weight: 400;
+	font-size: 1.5em;
+	color: var(--subtitle-text);
+	text-align: center;
+	text-transform: uppercase;
+	padding-top: 1.25em;
+}
+
+header.subtitle {
+	margin: 3px 0;
+	padding-top: 15px;
+}
+
+header.subtitle h2 {
+	font-weight: 350;
+	font-size: 2em;
+	color: var(--subtitle-text);
+	text-align: center;
+	text-transform: uppercase;
+}
+
+header.sub {
+	margin: 6px 0;
+	padding-top: 25px;
+	text-align: center;
+}
+
+header.sub h1 {
+	font-weight: 400;
+	font-size: 2.5em;
+	color: var(--title-text);
+	text-align: center;
+	text-transform: uppercase;
+	display: inline;
+}
+
+header.sub h2 {
+	font-weight: 350;
+	font-size: 2em;
+	color: var(--subtitle-text);
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.linetop {
+	width: 1060px;
+	height: auto;
+	margin: 20 auto;
+   	border-bottom: 2px double var(--linebreak);
+   	text-align: center;
+}
+
+.linebottom {
+	width: 650px;
+	height: auto;
+	margin: 10 auto;
+   	border-bottom: 2px dashed var(--linebreak);
+   	text-align: center;
+}
+
+.highlighter1 {
+	background-color: var(--highlighter);
+	padding-top: 0.2em;
+	padding-left: 0.4em;
+	padding-right: 5.23em;
+	color: var(--highlighter-text);
+}
+
+.highlighter2 {
+	background-color: var(--highlighter);
+	padding-top: 0.4em;
+	padding-bottom: 0.4em;
+	padding-left: 0.4em;
+	padding-right: 0.4em;
+	color: var(--highlighter-text);
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+      
+.label {
+    background-color: var(--toggle-bg);
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: absolute;
+    z-index: 9999;
+    top: 22px;
+    right: 26px;
+    height: 18px;
+    width: 40px;
+    transform: scale(1.5);
+}
+
+.label .ti-moon {
+    color: var(--icon-moon);
+}
+
+.label .ti-sun {
+    color: var(--icon-sun);
+}
+
+.label .ball {
+    background-color: var(--toggle-button);
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    height: 22px;
+    width: 22px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+  
+.checkbox:checked + .label .ball {
+    transform: translateX(20px);
+}
+
+footer {
+    background: var(--footerbg);
+    position: relative;
+	width: 100%;
+}
+
+.moving-glow:before, .moving-glow:after {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -8px;
+	background: linear-gradient(
+    	45deg,
+    	var(--wisteria-light),
+    	var(--sky-light),
+    	var(--surf-light),
+    	var(--ginkgo-light),
+    	var(--yuzu-light),
+    	var(--mikan-light), 
+       var(--hydrangea-light),
+       var(--azalea-light),
+       var(--wisteria-light)
+    );
+    background-size: 200%;
+    width: calc(100% + 16px);
+    height: 100%;
+    z-index: -1;
+    animation: anim-moving-glow 20s linear infinite;
+}
+
+@keyframes anim-moving-glow {
+    0% {
+       	background-position: 0 0;
+    }
+    50% {
+       	background-position: 400% 0;
+    }
+    100% {
+       	background-position: 0 0;
+    }
+}
+
+.moving-glow:after {
+   	filter: blur(0px);
+}
+
+div.container {
+	text-align: center;
+	display: flex;
+  	flex-direction: row;
+  	justify-content: center;
+  	text-transform: uppercase;
+  	font-size: 1.6em;
+	color: var(--subtitle-text);
+}
+
+div.container button {
+  	background-color: var(--button-main);
+  	color: var(--button-text);
+  	border: none;
+  	padding: 15px 28px;
+  	text-align: center;
+  	display: block;
+  	font-size: 0.8em;
+  	margin: 10px;
+  	font-weight: 550;
+  	width: 12.5em;
+}
+
+div.container button:hover {
+	-webkit-transform: scale(1.04);
+   	transform: scale(1.04);
+}
+
+div.container button:hover {
+  	box-shadow: 0 4px 5px 0 rgba(0,0,0,0.24), 0 4px 24px 0 rgba(0,0,0,0.19);
+  	cursor: pointer;
+}
+
+div.container button.btn1 {
+  	background-color: var(--button-main);
+}
+
+div.container button.btn2 {
+  	background-color: var(--button-sub);
+}
+
+div.container p {
+  	color: var(--tag-text);
+  	border: none;
+  	padding: 8px 8px;
+  	text-align: center;
+  	display: block;
+  	font-size: 0.6em;
+  	margin: 2px;
+  	font-weight: 550;
+}
+
+.tag1 {
+	background-color: var(--tag1);
+	border-radius: 8px;
+	padding-top: 0.4em;
+	padding-bottom: 0.4em;
+	padding-left: 0.8em;
+	padding-right: 0.8em;
+	margin: 4.1em;
+	color: var(--tag-text);
+}
+
+.tag2 {
+	background-color: var(--tag2);
+	border-radius: 8px;
+	padding-top: 0.4em;
+	padding-bottom: 0.4em;
+	padding-left: 0.8em;
+	padding-right: 0.8em;
+	margin: 4.1em;
+	color: var(--tag-text);
+}
+
+.tag3 {
+	background-color: var(--tag3);
+	border-radius: 8px;
+	padding-top: 0.4em;
+	padding-bottom: 0.4em;
+	padding-left: 0.8em;
+	padding-right: 0.8em;
+	margin: 4.1em;
+	color: var(--tag-text);
+}
+
+emoji {
+    font-size: 2.8em;
+    padding-right: 0.1em;
+	vertical-align: 0.18em;
+}
+
+section.box {
+	width: 104px;
+	height: 123px;
+	background-color: var(--card-bg);
+	box-shadow: 0 2px 6px var(--drop-shadow);
+	border-radius: 5px;
+	display: block;
+	float: left;
+	margin: 10px;
+	border: 4px solid;
+	border-radius: 10px;
+	border-color: var(--card-border);
+}
+	
+section.box h1 {
+	font-weight: 500;
+	font-size: 16px;
+	color: var(--card-text-major);
+	display: block;
+	float: none;
+	padding: 5px 0px 0px 5px;
+	padding-top: 5px;
+}
+	
+section.box h2 {
+	font-weight: 400;
+	font-size: 14px;
+	color: var(--card-text-major);
+	display: block;
+	float: none;
+	padding: 5px 0px 0px 5px;
+	font-style: italic;
+}
+	
+section.box p {
+	font-weight: 500;
+	font-size: 11px;
+	color: var(--card-text-minor);
+	display: block;
+	float: none;
+	padding: 5px 0px 5px 5px;
+	padding-top: 66px;
+}
+	
+section.color-left {
+	width: 52px;
+	height: 62px;
+	background-color: var(--color-missing);
+	border-top-left-radius: 8px;
+	display: block;
+	float: left;
+	-webkit-transition: all 200ms 0ms ease-in-out;
+   	transition: all 200ms 0ms ease-in-out;
+}
+
+section.color-left:hover {
+	-webkit-transform: scale(1.04);
+   	transform: scale(1.04);
+}
+
+section.color-right {
+	width: 52px;
+	height: 62px;
+	background-color: var(--color-missing);
+	border-top-right-radius: 8px;
+	display: block;
+	float: left;
+	-webkit-transition: all 200ms 0ms ease-in-out;
+   	transition: all 200ms 0ms ease-in-out;
+}
+
+section.color-right:hover {
+	-webkit-transform: scale(1.04);
+   	transform: scale(1.04);
+}	
+
+section.color-full {
+	width: 104px;
+	height: 62px;
+	background-color: var(--color-missing);
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	display: block;
+	float: left;
+	-webkit-transition: all 200ms 0ms ease-in-out;
+   	transition: all 200ms 0ms ease-in-out;
+}
+
+section.color-full:hover {
+	-webkit-transform: scale(1.04);
+   	transform: scale(1.04);
+}
+
+.dropper-cursor {
+  	cursor: url(data:image/x-icon;base64,AAABAAEAEBAAAAAAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAQAQAAAAAAAAAAAAAAAAAAAAAAAD///8BAAAAfwAAAIH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8BAAAAcQAAAN8AAADTAAAArwAAAE8AAAAJ////Af///wH///8B////Af///wH///8B////Af///wH///8B////AQAAAJEAAADLAAAAEwAAAHsAAADDAAAA3wAAADP///8B////Af///wH///8B////Af///wH///8B////Af///wH///8BAAAAuQAAAHX///8B////AQAAAF0AAADtAAAAOf///wH///8B////Af///wH///8B////Af///wH///8B////AQAAAFMAAAC/////Af///wH///8BAAAAUQAAAO0AAAA5////Af///wH///8B////Af///wH///8B////Af///wEAAAANAAAA5wAAAFH///8B////Af///wEAAABRAAAA7QAAADn///8B////Af///wH///8B////Af///wH///8B////AQAAAD0AAADtAAAARf///wH///8B////AQAAAFEAAADtAAAAOQAAACP///8B////Af///wH///8B////Af///wH///8BAAAARQAAAO0AAABF////Af///wH///8BAAAAUQAAAO0AAADvAAAAmf///wH///8B////Af///wH///8B////Af///wEAAABFAAAA7QAAAEX///8B////AQAAADUAAADxAAAA/wAAAPcAAAAr////Af///wH///8B////Af///wH///8B////AQAAAEUAAADtAAAARQAAADUAAADvAAAA/wAAAPcAAABFAAAALf///wH///8B////Af///wH///8B////Af///wH///8BAAAARQAAAO0AAADvAAAA/wAAAPcAAABFAAAAgwAAAPsAAABX////Af///wH///8B////Af///wH///8B////AQAAACUAAADvAAAA/wAAAPcAAABFAAAAgwAAAP8AAAD/AAAA+wAAAE////8B////Af///wH///8B////Af///wEAAAADAAAAoQAAAPcAAABFAAAAgwAAAP8AAAD/AAAA/wAAAP8AAADf////Af///wH///8B////Af///wH///8B////AQAAAAMAAAAvAAAALQAAAPsAAAD/AAAA/wAAAP8AAAD/AAAA+////wH///8B////Af///wH///8B////Af///wH///8B////Af///wEAAABXAAAA+wAAAP8AAAD/AAAA/wAAALX///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////AQAAAE8AAADfAAAA+wAAALUAAAAXAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//w==), default;
+}
+	
+/*-- MAIN COLOURS --*/
+/* Purple: Wisteria */
+section.color-left.wisteria-light {background-color: var(--wisteria-light);}
+section.color-right.wisteria-dark {background-color: var(--wisteria-dark);}
+/* Blue: Sky */
+section.color-left.sky-light {background-color: var(--sky-light);}
+section.color-right.sky-dark {background-color: var(--sky-dark);}
+/* Cyan: Surf */
+section.color-left.surf-light {background-color: var(--surf-light);}
+section.color-right.surf-dark {background-color: var(--surf-dark);}
+/* Green: Ginkgo */
+section.color-left.ginkgo-light {background-color: var(--ginkgo-light);}
+section.color-right.ginkgo-dark {background-color: var(--ginkgo-dark);}
+/* Yellow: Yuzu */
+section.color-left.yuzu-light {background-color: var(--yuzu-light);}
+section.color-right.yuzu-dark {background-color: var(--yuzu-dark);}
+/* Orange: Mikan */
+section.color-left.mikan-light {background-color: var(--mikan-light);}
+section.color-right.mikan-dark {background-color: var(--mikan-dark);}
+/* Red-Pink: Hydrangea */
+section.color-left.hydrangea-light {background-color: var(--hydrangea-light);}
+section.color-right.hydrangea-dark {background-color: var(--hydrangea-dark);}
+/* Pink: Azalea */
+section.color-left.azalea-light {background-color: var(--azalea-light);}
+section.color-right.azalea-dark {background-color: var(--azalea-dark);}
+	
+	
+/*-- NEUTRAL COLOURS --*/
+/* Near White: Pebble */
+section.color-full.pebble {background-color: var(--pebble);}
+/* Light Grey: Mackerel */
+section.color-full.mackerel {background-color: var(--mackerel);}
+/* Dark Grey: Basalt */
+section.color-full.basalt {background-color: var(--basalt);}
+/* Near Black: Slate */
+section.color-full.slate {background-color: var(--slate);}
+
+
+/*-- SPRING SUB THEME COLOURS --*/
+/* Dark Brown: Anko */
+section.color-left.anko-light {background-color: var(--anko-light);}
+section.color-right.anko-dark {background-color: var(--anko-dark);}
+/* Brown: Karinto */
+section.color-left.karinto-light {background-color: var(--karinto-light);}
+section.color-right.karinto-dark {background-color: var(--karinto-dark);}
+/* Cream: Dango */
+section.color-left.dango-light {background-color: var(--dango-light);}
+section.color-right.dango-dark {background-color: var(--dango-dark);}
+/* Pink: Sakura */
+section.color-left.sakura-light {background-color: var(--sakura-light);}
+section.color-right.sakura-dark {background-color: var(--sakura-dark);}
+/* Blue: Marble Soda */
+section.color-left.marblesoda-light {background-color: var(--marblesoda-light);}
+section.color-right.marblesoda-dark {background-color: var(--marblesoda-dark);}
+/* Green: Matcha */
+section.color-left.matcha-light {background-color: var(--matcha-light);}
+section.color-right.matcha-dark {background-color: var(--matcha-dark);}
