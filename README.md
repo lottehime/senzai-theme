@@ -22,7 +22,6 @@
 To learn more about Senzai, click the button below!</i>
 
 
-
 ---
 
 [![Contributors][contributors-shield]][contributors-url] [![Stargazers][stars-shield]][stars-url] [![License][license-shield]][license-url] 
