@@ -1,0 +1,902 @@
+<html>
+
+<head>
+	<title>Senzai: Style Guide (WIP!)</title>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<script type="text/javascript" src="js/page.utils.js"></script>
+
+<body>
+    <div>
+        <input type="checkbox" class="checkbox" id="chk" name="chk" onChange="darkMode(this);"/>
+        <label class="label" for="chk">
+        <i class="ti ti-sun"></i>
+        <i class="ti ti-moon"></i>
+        <div class="ball"></div>
+        </label>
+    </div>
+	<div>
+		<header class="main">
+			<h3>せんざい</h3>
+			<emoji>🌱</emoji><h1>Senzai</h1><h2>潜在</h2>
+			</br></br>
+			<h1>Style Guide</h1>
+
+			<h4>A guide on how to properly use the color scheme</h4>
+		</header>
+		<div class="linetop"></div>
+
+		<header class="subtitle">
+			<div style="padding-top: 0.75em;"></div>
+			<p style="font-size: 1.5em;">
+				<span class="highlighter" style="background-color: var(--yuzu-light); padding-right: 19.75em;">
+					<i><strong>💬 Important!</strong></i>
+				</span>
+			</p>
+			<p style="font-size: 1.2em; padding-top: 0.3em;">
+				<span class="highlighter" style="background-color: var(--yuzu-light); padding-right: 0.2em;">
+					<i>Text colors are guidelines, certain cases require deviations from the below.
+					</i>
+				</span>
+			</p>
+			<p style="font-size: 1.2em; padding-top: 0.3em;">
+				<span class="highlighter" style="background-color: var(--yuzu-light); padding-right: 18.5em; padding-bottom: 0.4em;">
+					<i> Please use your own judgement.
+					</i>
+				</span>
+			</p>
+		</header>
+
+		<header class="main">
+			<h4>Background Colors</h4>
+		</header>
+		<div class="container">
+		<table id="colorstable">
+  			<tr>
+  			  <th style="width: 370px;">Function</th>
+  			  <th style="width: 150px;">ID</th>
+  			  <th style="width: 75px;">Colors</th>
+  			</tr>
+  			<tr>
+  			  <td>Background Pane</td>
+  			  <td>Base</td>
+  			  <td>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--pebble); cursor: help;">
+  			  	</span>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--basalt); cursor: help;">
+  			  	</span>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--slate); cursor: help;">
+  			  	</span>
+  			  </td>
+  			</tr>
+  			<tr>
+  			  <td>Secondary Panes</td>
+  			  <td>Middle</td>
+  			  <td>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--pebble); cursor: help;">
+  			  	</span>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--basalt); cursor: help;">
+  			  	</span>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--slate); cursor: help;">
+  			  	</span>
+  			  </td>
+  			</tr>
+  			<tr>
+  			  <td>Surface Elements</td>
+  			  <td>Surface</td>
+  			  <td>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--pebble); cursor: help;">
+  			  	</span>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--mackerel); cursor: help;">
+  			  	</span>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--basalt); cursor: help;">
+  			  	</span>
+  			  </td>
+  			</tr>
+  			<tr>
+  			  <td>Overlays</td>
+  			  <td>Overlay</td>
+  			  <td>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--mackerel); cursor: help;">
+  			  	</span>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--basalt); cursor: help;">
+  			  	</span>
+  			  </td>
+  			</tr>
+  			<tr>
+  			  <td>Shaders and GFX</td>
+  			  <td>Defaults and Errors</td>
+  			  <td>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--azalea-light); cursor: help;">
+  			  	</span>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--azalea-dark); cursor: help;">
+  			  	</span>
+  			  </td>
+  			</tr>		
+		</table>
+		</div>
+
+		<header class="main">
+			<h4>Typography & Terminals</h4>
+		</header>
+		<div class="container">
+		<table id="colorstable">
+  			<tr>
+  			  <th style="width: 370px;">Function</th>
+  			  <th style="width: 150px;">ID</th>
+  			  <th style="width: 75px;">Colors</th>
+  			</tr>
+  			<tr>
+  			  <td>Body Copy</td>
+  			  <td>Text</td>
+  			  <td>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--basalt); cursor: help;">
+  			  	</span>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--mackerel); cursor: help;">
+  			  	</span>
+  			  </td>
+  			</tr>
+  			<tr>
+  			  <td>Main Headline</td>
+  			  <td>Text</td>
+  			  <td>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--slate); cursor: help;">
+  			  	</span>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--pebble); cursor: help;">
+  			  	</span>
+  			  </td>
+  			</tr>
+  			<tr>
+  			  <td>Sub-Headline, Labels</td>
+  			  <td>Subtext</td>
+  			  <td>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--slate); cursor: help;">
+  			  	</span>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--pebble); cursor: help;">
+  			  	</span>
+  			  </td>
+  			</tr>
+  			<tr>
+  			  <td>Subtle</td>
+  			  <td>Overlay</td>
+  			  <td>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--basalt); cursor: help;">
+  			  	</span>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--mackerel); cursor: help;">
+  			  	</span>
+  			  </td>
+  			</tr>
+  			<tr>
+  			  <td>Links, URLs, URIs</td>
+  			  <td>Sky</td>
+  			  <td>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--sky-dark); cursor: help;">
+  			  	</span>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--sky-light); cursor: help;">
+  			  	</span>
+  			  </td>
+  			</tr>
+  			<tr>
+  			  <td>Sucess, Positive Feedback</td>
+  			  <td>Ginkgo</td>
+  			  <td>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--ginkgo-dark); cursor: help;">
+  			  	</span>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--ginkgo-light); cursor: help;">
+  			  	</span>
+  			  </td>
+  			</tr>
+  			<tr>
+  			  <td>Warnings</td>
+  			  <td>Mikan</td>
+  			  <td>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--mikan-dark); cursor: help;">
+  			  	</span>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--mikan-light); cursor: help;">
+  			  	</span>
+  			  </td>
+  			</tr>
+  			<tr>
+  			  <td>Errors, Failures, Negative Feedback</td>
+  			  <td>Hydrangea</td>
+  			  <td>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--hydrangea-dark); cursor: help;">
+  			  	</span>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--hydrangea-light); cursor: help;">
+  			  	</span>
+  			  </td>
+  			</tr>
+  			<tr>
+  			  <td>Tags</td>
+  			  <td>Sky</td>
+  			  <td>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--sky-dark); cursor: help;">
+  			  	</span>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--sky-light); cursor: help;">
+  			  	</span>
+  			  </td>
+  			</tr>
+  			<tr>
+  			  <td>Cursor</td>
+  			  <td>Yuzu</td>
+  			  <td>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--yuzu-dark); cursor: help;">
+  			  	</span>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--yuzu-light); cursor: help;">
+  			  	</span>
+  			  </td>
+  			</tr>
+		</table>
+		</div>
+
+		</br></br></br>
+
+		<header class="subtitle">
+			<div style="padding-top: 0.75em;"></div>
+			<p style="font-size: 1.5em;">
+				<span class="highlighter" style="background-color: var(--yuzu-light); padding-right: 23.85em;">
+					<i><strong>💬 Important!</strong></i>
+				</span>
+			</p>
+			<p style="font-size: 1.2em; padding-top: 0.3em;">
+				<span class="highlighter" style="background-color: var(--yuzu-light); padding-right: 0.2em;">
+					<i>This is still a work-in-progress. Different editors have different capabilities for theming.
+					</i>
+				</span>
+			</p>
+			<p style="font-size: 1.2em; padding-top: 0.3em;">
+				<span class="highlighter" style="background-color: var(--yuzu-light); padding-right: 23.6em; padding-bottom: 0.4em;">
+					<i> Please use your own judgement.
+					</i>
+				</span>
+			</p>
+		</header>
+
+		<header class="main">
+			<h4>Code Editor Language Defaults</h4>
+		</header>
+		<div class="container">
+		<table id="colorstable">
+  			<tr>
+  			  <th style="width: 370px;">Syntax</th>
+  			  <th style="width: 150px;">ID</th>
+  			  <th style="width: 75px;">Colors</th>
+  			</tr>
+  			<tr>
+  			  <td>Keyword</td>
+  			  <td>Wisteria</td>
+  			  <td>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--wisteria-light); cursor: help;">
+  			  	</span>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--wisteria-dark); cursor: help;">
+  			  	</span>
+  			  </td>
+  			</tr>
+  			<tr>
+  			  <td>Strings</td>
+  			  <td>Yuzu</td>
+  			  <td>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--yuzu-light); cursor: help;">
+  			  	</span>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--yuzu-dark); cursor: help;">
+  			  	</span>
+  			  </td>
+  			</tr>
+  			<tr>
+  			  <td>Symbols</td>
+  			  <td>Hydrangea</td>
+  			  <td>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--hydrangea-light); cursor: help;">
+  			  	</span>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--hydrangea-dark); cursor: help;">
+  			  	</span>
+  			  </td>
+  			</tr>
+  			<tr>
+  			  <td>Esc Sequences, Regex</td>
+  			  <td>Azalea</td>
+  			  <td>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--azalea-light); cursor: help;">
+  			  	</span>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--azalea-dark); cursor: help;">
+  			  	</span>
+  			  </td>
+  			</tr>
+  			<tr>
+  			  <td>Comments</td>
+  			  <td>Mackerel, Basalt</td>
+  			  <td>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--mackerel); cursor: help;">
+  			  	</span>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--basalt); cursor: help;">
+  			  	</span>
+  			  </td>
+  			</tr>
+  			<tr>
+  			  <td>Constants, Numbers</td>
+  			  <td>Mikan</td>
+  			  <td>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--mikan-light); cursor: help;">
+  			  	</span>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--mikan-dark); cursor: help;">
+  			  	</span>
+  			  </td>
+  			</tr>
+  			<tr>
+  			  <td>Operators</td>
+  			  <td>Surf</td>
+  			  <td>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--surf-light); cursor: help;">
+  			  	</span>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--surf-dark); cursor: help;">
+  			  	</span>
+  			  </td>
+  			</tr>
+  			<tr>
+  			  <td>Braces, Delimiters, etc.</td>
+  			  <td>Mackerel, Basalt</td>
+  			  <td>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--mackerel); cursor: help;">
+  			  	</span>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--basalt); cursor: help;">
+  			  	</span>
+  			  </td>
+  			</tr>
+  			<tr>
+  			  <td>Methods, Functions</td>
+  			  <td>Sky</td>
+  			  <td>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--sky-light); cursor: help;">
+  			  	</span>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--sky-dark); cursor: help;">
+  			  	</span>
+  			  </td>
+  			</tr>
+  			<tr>
+  			  <td>Parameters</td>
+  			  <td>Hydrangea</td>
+  			  <td>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--hydrangea-light); cursor: help;">
+  			  	</span>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--hydrangea-dark); cursor: help;">
+  			  	</span>
+  			  </td>
+  			</tr>
+  			<tr>
+  			  <td>Builtins</td>
+  			  <td>Hydrangea</td>
+  			  <td>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--hydrangea-light); cursor: help;">
+  			  	</span>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--hydrangea-dark); cursor: help;">
+  			  	</span>
+  			  </td>
+  			</tr>
+  			<tr>
+  			  <td>Classes, Interfaces, Annotations, Metadata, Enums, Types</td>
+  			  <td>Ginkgo</td>
+  			  <td>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--ginkgo-light); cursor: help;">
+  			  	</span>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--ginkgo-dark); cursor: help;">
+  			  	</span>
+  			  </td>
+  			</tr>
+  			<tr>
+  			  <td>Enum Variants</td>
+  			  <td>Surf</td>
+  			  <td>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--surf-light); cursor: help;">
+  			  	</span>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--surf-dark); cursor: help;">
+  			  	</span>
+  			  </td>
+  			</tr>
+  			<tr>
+  			  <td>Properties</td>
+  			  <td>Sky</td>
+  			  <td>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--sky-light); cursor: help;">
+  			  	</span>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--sky-dark); cursor: help;">
+  			  	</span>
+  			  </td>
+  			</tr>
+  			<tr>
+  			  <td>Attributes</td>
+  			  <td>Yuzu</td>
+  			  <td>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--yuzu-light); cursor: help;">
+  			  	</span>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--yuzu-dark); cursor: help;">
+  			  	</span>
+  			  </td>
+  			</tr>
+  			<tr>
+  			  <td>Breakpoint Icons</td>
+  			  <td>Hydrangea</td>
+  			  <td>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--hydrangea-light); cursor: help;">
+  			  	</span>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--hydrangea-dark); cursor: help;">
+  			  	</span>
+  			  </td>
+  			</tr>
+  			<tr>
+  			  <td>Breakpoint Lines</td>
+  			  <td>Pebble, Slate</td>
+  			  <td>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--pebble); cursor: help;">
+  			  	</span>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--slate); cursor: help;">
+  			  	</span>
+  			  </td>
+  			</tr>
+  			<tr>
+  			  <td>Breakpoint Lines (Execution)</td>
+  			  <td>Yuzu</td>
+  			  <td>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--yuzu-light); cursor: help;">
+  			  	</span>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--yuzu-dark); cursor: help;">
+  			  	</span>
+  			  </td>
+  			</tr>
+  			<tr>
+  			  <td>Diff Changed</td>
+  			  <td>Sky</td>
+  			  <td>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--sky-light); cursor: help;">
+  			  	</span>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--sky-dark); cursor: help;">
+  			  	</span>
+  			  </td>
+  			</tr>
+  			<tr>
+  			  <td>Diff Inserted</td>
+  			  <td>Ginkgo</td>
+  			  <td>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--ginkgo-light); cursor: help;">
+  			  	</span>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--ginkgo-dark); cursor: help;">
+  			  	</span>
+  			  </td>
+  			</tr>
+  			<tr>
+  			  <td>Diff Removed</td>
+  			  <td>Hydrangea</td>
+  			  <td>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--hydrangea-light); cursor: help;">
+  			  	</span>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--hydrangea-dark); cursor: help;">
+  			  	</span>
+  			  </td>
+  			</tr>
+		</table>
+		</div>
+
+		</br></br>
+		<header class="subtitle">
+			<div style="padding-top: 0.75em;"></div>
+			<p style="font-size: 1.5em;">
+				<span class="highlighter" style="background-color: var(--yuzu-light); padding-right: 16.35em;">
+					<i><strong>💬 Important!</strong></i>
+				</span>
+			</p>
+			<p style="font-size: 1.2em; padding-top: 0.3em;">
+				<span class="highlighter" style="background-color: var(--yuzu-light); padding-right: 0.2em;">
+					<i>The <strong>Amai</strong> sub-theme colors are advised for use as UI colors only.
+					</i>
+				</span>
+			</p>
+			<p style="font-size: 1.2em; padding-top: 0.3em;">
+				<span class="highlighter" style="background-color: var(--yuzu-light); padding-right: 0.35em;">
+					<i>The colors can be mixed with standard <strong>Senzai</strong> colors as needed.
+					</i>
+				</span>
+			</p>
+			<p style="font-size: 1.2em; padding-top: 0.3em;">
+				<span class="highlighter" style="background-color: var(--yuzu-light); padding-right: 14.25em; padding-bottom: 0.4em;">
+					<i> Please use your own judgement.
+					</i>
+				</span>
+			</p>
+		</header>
+
+		<header class="main">
+			<h4>Amai Sub-Theme Interface Colors</h4>
+		</header>
+		<div class="container">
+		<table id="colorstable">
+  			<tr>
+  			  <th style="width: 370px;">Function</th>
+  			  <th style="width: 150px;">ID</th>
+  			  <th style="width: 75px;">Colors</th>
+  			</tr>
+  			<tr>
+  			  <td>Background Pane</td>
+  			  <td>Base</td>
+  			  <td>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--dango-light); cursor: help;">
+  			  	</span>
+  			  </td>
+  			</tr>
+  			<tr>
+  			  <td>Secondary Panes</td>
+  			  <td>Mantle</td>
+  			  <td>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--sakura-light); cursor: help;">
+  			  	</span>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--dango-dark); cursor: help;">
+  			  	</span>
+  			  </td>
+  			</tr>
+  			<tr>
+  			  <td>Surface Elements</td>
+  			  <td>Surface</td>
+  			  <td>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--dango-light); cursor: help;">
+  			  	</span>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--sakura-light); cursor: help;">
+  			  	</span>
+  			  </td>
+  			</tr>
+  			<tr>
+  			  <td>Overlays (Neutral)</td>
+  			  <td>Overlay</td>
+  			  <td>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--dango-light); cursor: help;">
+  			  	</span>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--dango-dark); cursor: help;">
+  			  	</span>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--karinto-light); cursor: help;">
+  			  	</span>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--karinto-dark); cursor: help;">
+  			  	</span>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--anko-light); cursor: help;">
+  			  	</span>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--anko-dark); cursor: help;">
+  			  	</span>
+  			  </td>
+  			</tr>
+  			<tr>
+  			  <td>Overlays (Positive)</td>
+  			  <td>Overlay</td>
+  			  <td>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--matcha-light); cursor: help;">
+  			  	</span>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--matcha-dark); cursor: help;">
+  			  	</span>
+  			  </td>
+  			</tr>
+  			<tr>
+  			  <td>Overlays (Informative)</td>
+  			  <td>Overlay</td>
+  			  <td>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--marblesoda-light); cursor: help;">
+  			  	</span>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--marblesoda-dark); cursor: help;">
+  			  	</span>
+  			  </td>
+  			</tr>
+  			<tr>
+  			  <td>Overlays (Important, Negative)</td>
+  			  <td>Overlay</td>
+  			  <td>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--sakura-light); cursor: help;">
+  			  	</span>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--sakura-dark); cursor: help;">
+  			  	</span>
+  			  </td>
+  			</tr>
+  			<tr>
+  			  <td>Overlay and Surface Text</td>
+  			  <td>Text</td>
+  			  <td>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--anko-dark); cursor: help;">
+  			  	</span>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--karinto-dark); cursor: help;">
+  			  	</span>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--sakura-dark); cursor: help;">
+  			  	</span>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--marblesoda-dark); cursor: help;">
+  			  	</span>
+  			  	<span 	class="dot"
+  			  			onclick="copyColor(this)"
+  			  			style="background-color: var(--matcha-dark); cursor: help;">
+  			  	</span>
+  			  </td>
+  			</tr>	
+		</table>
+		</div>
+
+
+	</div>
+
+	<div>
+		</br>
+		</br>
+		<header class="subtitle">
+			<h2>🔎Specs</h2>
+		</header>
+		</br>
+		<p>
+			<strong>Palette & Identity:</strong>
+		</p>
+		</br>
+		<li>
+			Senzai consists of 8 key colors. Each color has it's own use-cases and reason to exist distinct from the others. Each one has a label for identification that evokes the color and the stylistic theme. Each color is considered with dark & bright ambiance in mind for designs and intended for use in a minial and flat style.
+		</li>
+
+		</br>
+		</br>
+		<p>
+			<strong>Color Semiotics:</strong>
+		</p>
+		</br>
+		<p>The colors have semiotic considerations as well, with each color evoking intrinsic human emotion.</p>
+		</br>
+			 <li>Purple is creative, imaginative and wise.</li>
+			 <li>Blue is trustworthy, strong and dependable.</li>
+			 <li>Green is peaceful, healthy and full of growth.</li>
+			 <li>Yellow is optimistic, clear and warm.</li>
+			 <li>Orange is friendly, cheerful and confident.</li>
+			 <li>Red is exciting, youthful and bold.</li>
+			 <li>Neutrals between white and black are balanced and calm.</li>	
+		</br>
+		<p>Secondarily, the palette provides typical UX feedback based on the color as well.</p>
+		</br>
+
+		<li>
+			Red is alarmed and alert.
+		</li>
+		<li>
+			Orange and yellow are cause to pay more attention.
+		</li>
+		<li>
+			Green is reassuring.
+		</li>
+		<li>
+			Blue is informative.
+		</li>
+		</br>
+		<p>Colors that exist as a combination of two others offer a feeling that is a mix of the two.</p>
+		
+		</br>
+		</br>
+		</br>
+		<p>
+			<strong>UI Infrastructure:</strong>
+		</p>
+		</br>
+		<p>The UI infrastructure in the tables above can be broken down into layers, like below:</p>
+		</br>
+		<p>Base ➡️ Middle ➡️ Sub-surface ➡️ Surface ➡️ Super-surface</p>
+		</br>
+		<p></p>
+
+
+
+
+
+
+	</div>
+	</br>
+	</br>
+	</br>
+	</br>
+</body>
+<footer class="footer moving-glow">
+	</br>
+	</br>	
+	<div>
+		<p>
+			If you decide to use the Senzai color scheme and styling guide for a project, please credit and link back to this page to show your support. Thank you!
+		</p>
+		</br>
+		<p>
+			The Senzai theme files and code are licensed under the <a href="https://www.gnu.org/licenses/gpl-3.0.en.html" target="_blank">GNU General Public License v3 (GPL-3)	</a>
+		</p>
+		</br>
+		<p id="copyright">
+		</p>
+	</div>
+	</br>
+	</br>
+</footer>
+</html>
