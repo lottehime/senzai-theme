@@ -61,7 +61,7 @@
 	--icon-moon:		var(--slate);
 	--color-missing:	var(--azalea-dark);
 
-	overflow-x: hidden;
+	overflow-x: hidden!important;
 }
 
 :root.dark {
@@ -91,6 +91,8 @@
     --icon-sun:			var(--yuzu-light);
     --icon-moon:		var(--slate);
     --color-missing:	var(--azalea-dark);
+
+    overflow-x: hidden!important;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -125,18 +127,20 @@ ol {
 	list-style: none;
 }
 p {
-	width: 860px;
+	min-width: 25%;
+	max-width: 860px;
 	height: auto;
 	margin: 0 auto;
-	font-size: 1.25em;
+	font-size: 16pt;
 	color: var(--text-major);
 	text-align: left;
 }
 li {
-	width: 860px;
+	min-width: 25%;
+	max-width: 860px;
 	height: auto;
 	margin: 0 auto;
-	font-size: 1.25em;
+	font-size: 16pt;
 	color: var(--text-major);
 	text-align: left;
 	list-style-type: disc;
@@ -173,6 +177,10 @@ a:active {
 a:link, a:visited {
   	text-decoration: none;
 }
+
+* {
+  -webkit-text-size-adjust:100%;
+}
 	
 section.container1 {
 	width: 1060px;
@@ -204,7 +212,7 @@ header.main {
 
 header.main h1 {
 	font-weight: 400;
-	font-size: 4em;
+	font-size: 48pt;
 	color: var(--title-text);
 	text-align: center;
 	text-transform: uppercase;
@@ -213,7 +221,7 @@ header.main h1 {
 
 header.main h2 {
 	font-weight: 400;
-	font-size: 2.25em;
+	font-size: 29pt;
 	color: var(--text-minor);
 	text-transform: uppercase;
 	display: inline;
@@ -223,10 +231,10 @@ header.main h2 {
 
 header.main h3 {
 	font-weight: 550;
-	font-size: 1.05em;
+	font-size: 13pt;
 	color: var(--text-minor);
 	text-transform: uppercase;
-	padding-left: 17.3em;
+	padding-left: 16.8em;
 	position: relative;
 	top: 7px;
 }
@@ -288,7 +296,8 @@ header.sub h2 {
 }
 
 .linetop {
-	width: 1060px;
+	min-width: 25%;
+	max-width: 1060px;
 	height: auto;
 	margin: 20 auto;
    	border-bottom: 2px double var(--linebreak);
@@ -296,7 +305,8 @@ header.sub h2 {
 }
 
 .linebottom {
-	width: 650px;
+	min-width: 25%;
+	max-width: 650px;
 	height: auto;
 	margin: 10 auto;
    	border-bottom: 2px dashed var(--linebreak);
@@ -305,6 +315,7 @@ header.sub h2 {
 
 .highlighter {
 	background-color: var(--highlighter);
+	min-width: min-content;
 	padding-top: 0.2em;
 	padding-left: 0.4em;
 	color: var(--highlighter-text);
@@ -366,7 +377,7 @@ footer {
 .moving-glow:before, .moving-glow:after {
     content: '';
     position: absolute;
-    left: -2px;
+    left: 0px;
     top: -8px;
 	background: linear-gradient(
     	45deg,
@@ -381,7 +392,7 @@ footer {
        var(--wisteria-light)
     );
     background-size: 200%;
-    width: calc(100% + 16px);
+    width: 100%;
     height: 100%;
     z-index: -1;
     animation: anim-moving-glow 20s linear infinite;
