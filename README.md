@@ -15,6 +15,10 @@
 
 <img src="https://custom-icon-badges.demolab.com/badge/-CLICK_HERE_TO_CHECK_IT_OUT-68ba9f?colorA=2A262C&colorB=B9E48B&style=for-the-badge&logo=globe&logoColor=white" height="60"/>
 
+</br>
+<img src="assets/ss01.png"/>
+</br>
+
 <i>This is the repository for the Senzai color scheme webpage and files.
 
 To learn more about Senzai, click the button above!</i>
