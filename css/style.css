@@ -137,7 +137,7 @@ p {
 }
 li {
 	min-width: 25%;
-	max-width: 860px;
+	max-width: 740px;
 	height: auto;
 	margin: 0 auto;
 	font-size: 16pt;
@@ -145,9 +145,9 @@ li {
 	text-align: left;
 	list-style-type: disc;
   	list-style-position: inside;
-  	text-indent: -1.4em;
-  	padding-left: 2.5em;
-  	padding-bottom: 0.6em;
+  	text-indent: -30px;
+  	padding-left: 10px;
+  	padding-bottom: 10px;
 }
 blockquote, q {
 	quotes: none;
