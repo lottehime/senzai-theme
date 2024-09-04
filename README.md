@@ -24,7 +24,7 @@ To learn more about Senzai, click the button below!</i>
 
 ---
 
-[![Contributors][contributors-shield]][contributors-url] [![Stargazers][stars-shield]][stars-url] [![License][license-shield]][license-url] 
+[![Stargazers][stars-shield]][stars-url] [![Contributors][contributors-shield]][contributors-url] [![License][license-shield]][license-url] 
 
 [contributors-shield]: https://img.shields.io/github/contributors/lottehime/senzai-theme.svg?style=for-the-badge
 [contributors-url]: https://github.com/lottehime/senzai-theme/graphs/contributors
